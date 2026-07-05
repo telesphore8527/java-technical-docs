@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+            <header>JAVA Documentation</header>
+            <ul>
+                <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
+            <a href="#Java_and_javascript" class="nav-link">Java and javascript</a>
+            <a href="#Hello_world_program" class="nav-link">Hello world program</a>
+            <a href="#Variables" class="nav-link">Variables</a>
+            <a href="#Data_types" class="nav-link">Data types</a>
+            <a href="#if-else_statement" class="nav-link">if-else statement</a>
+            <a href="#loops_statement" class="nav-link">loops statement</a>
+            <a href="#fuction_declaration" class="nav-link">fuction declaration</a>
+            <a href="#reference" class="nav-link">reference</a>
+            </ul>
+        </nav>
+    <main id="main-doc">
+        
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>
+                Java is an object-oriented programming language created by <b>James Gosling</b> at Sun Microsystems in 1995. It is now maintained by Oracle Corporation.
+
+                 Java was designed to be portable, secure, and robust. Thanks to the Java Virtual Machine (JVM), Java programs can run on different operating systems without modification. This concept is often summarized by the phrase <b>Write Once, Run Anywhere.</b>
+        <p>Java is widely used to build:</p>
+            </p>
+            <ul>
+                <li>Web applications</li>
+                <li>Mobile application(especially android)</li>
+                <li>entreprise software</li>
+                <li>Distributed software</li>
+            </ul>
+            <p>Its popularity comes from its <b>reliability, large ecosystem, and strong community</b></p>
+        </section>
+
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+
+            <p>Before starting with Java, it is recommended to have some basic knowledge of computing and programming.</p>
+            <p>The main prerequisites include:</p>
+            <ul>
+                <li>
+                    <b>Basic computer knowledge:</b>understanding how computers, files, and operating systems work.
+                </li>
+                <li>
+                    <b>Programming logic:</b>concepts such as variables, conditions, loops, and algorithms.
+                </li>
+                <li>
+                    <b>Basic algorithmic thinking:</b>the ability to break down a problem into logical steps.
+                </li>
+                <li>
+                    <b>Using a code editor or IDE</b> such as IntelliJ IDEA, Eclipse IDE, or Visual Studio Code.
+                </li>
+                <li>
+                    <b>Basic technical English skills,</b>since most documentation and resources are written in English.
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="main-section" id="Java_and_javascript">
+            <header>Java and javascript</header>
+
+            <p>Despite the similarity in their names, Java and JavaScript are two different and independent programming languages.</p>
+
+            <p>ava is an object-oriented language mainly used to develop enterprise applications, Android mobile applications, and complex systems. It runs on the Java Virtual Machine (JVM), which allows programs to run on multiple platforms.</p>
+
+            <p>JavaScript, on the other hand, is mainly used for web development to create interactive and dynamic web pages. It runs directly in web browsers and can also be used on the server side through environments such as Node.js.</p>
+        </section>
+
+        <section class="main-section" id="Hello_world_program">
+            <header>Hello world program</header>
+            <p>The Hello World program is traditionally the first program written when learning a programming language such as Java. It helps understand the basic structure of a program and verify that the development environment is correctly installed.</p>
+            <p>Here is a simple example:</p>
+<pre><code>
+    public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        } 
+    }
+    
+</code></pre>
+            <p><b>Explanation</b></p>
+            <ul>
+                <li><b>class HelloWorld:</b>defines a class named HelloWorld. In Java, every program is based on classes.</li>
+                <li><code>public static void main(String[] args):</code>this is the main method where program execution begins.</li>
+                <li><code>System.out.println():</code>this statement prints a message to the console.
+
+When the program runs, it simply displays: <samp>Hello world!</samp> </li>
+            </ul>
+            <p>This example introduces some fundamental Java concepts such as classes, methods, and console output.</p>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>In Java, a variable is a memory space used to store a value that can be used and modified during program execution.</p> <br>
+            <p>In Java, variables are used as symbolic names that store values in a program. The name of a variable is called an identifier, and it must follow specific naming rules.</p>
+            <p>A Java identifier must start with a letter, an underscore (_), or a dollar sign ($). The following characters may also include digits (0–9). Since Java is case-sensitive, uppercase and lowercase letters are considered different. <br>
+
+            Identifiers may also include Unicode characters.</p>
+            <p>However, identifiers cannot be Java reserved keywords such as class, int, or public.</p> <br>
+
+            <p>Each variable must be declared with a data type that specifies the type of value it can store (such as numbers, characters, or text).</p>
+            <b>Example</b>
+<pre><code>
+    int age = 20; 
+    double price = 10.5; 
+    char letter = 'A'; 
+    String name = "John"; 
+
+</code></pre>
+            <ul>
+                In this example:
+                <li><b>int</b> stores integer numbers</li>
+                <li><b>double</b> stores decimal numbers</li>
+                <li><b>char</b> stores a single character</li>
+                <li><b>String</b> stores text</li>
+            </ul>
+            <p>Variables are therefore used to store, manipulate, and reuse data in a program.</p>
+
+        </section>
+
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+
+            <p>In Java, data types define the kind of value a variable can store. They help the program understand how to interpret and manipulate data.</p>
+            <p>Java data types are generally divided into two main categories:</p>
+
+            <p><b>1. Primitive Types</b></p>
+            <p>Primitive types store simple values directly. The main ones include</p>
+            <ul>
+                <li><b>int</b>: integer numbers</li>
+                <li><b>double</b>: decimal numbers</li>
+                <li><b>char</b>: a single character</li>
+                <li><b>boolean</b>: logical values (true or false)</li>
+                <li><b>float, long, short, byte:</b> other numeric types</li>
+            </ul>
+
+            <p><b>2. Non-primitive Types (Reference Types)</b></p> <br>
+                <p>Non-primitive types store references to objects. Examples include:</p>
+
+               <ul>
+                <li><b>String</b>: text or sequence of characters</li>
+                <li><b>Array</b>a collection of elements of the same type</li>
+                <li><b>Class and Object</b>: structures used in object-oriented programming</li>
+               </ul> 
+               <p>Data types are important because they determine how much memory is used and what operations can be performed on variables.</p>
+        </section>
+
+        <section class="main-section" id="if-else_statement">
+            <header>if-else statement</header>
+            <p>if and else statements are used to make decisions in a program by executing certain blocks of code only if a condition is true.</p>
+            <p><b>example</b></p>
+<pre><code>
+    int age = 18;
+    if (age >= 18) {
+       System.out.println("You are an adult.");
+    } else {
+       System.out.println("You are a minor.");
+    }
+
+</code></pre>
+            <ul>
+                <li>if (condition): executes the block if the condition is true.</li>
+                <li>else: executes the block if the condition is false.</li>
+            </ul>
+            <p>You can also use else if to test multiple conditions:</p>
+<pre><code>
+    if (age < 13) {
+        System.out.println("Child");
+    } else if (age < 18) {
+        System.out.println("Teenager");
+    } else {
+        System.out.println("Adult");
+    }
+
+</code></pre>
+            <p>These structures allow you to control the program's flow based on different conditions.</p>
+        </section>
+
+        <section class="main-section" id="loops_statement">
+            <header>loops statement</header>
+            <p>Loops allow you to repeat a block of code as long as a condition is true. They are useful for processing collections of data or performing repetitive tasks.</p>
+            <p><b>1. for loop</b></p>
+            <p>Used when the number of iterations is known in advance.</p>
+<pre><code>
+    for (int i = 0; i < 5; i++) { 
+        System.out.println("i = " + i);
+    }
+
+</code></pre>
+            <ul>
+                <li><code>int i = 0</code>: initialization</li>
+                <li><code>i < 5</code>: continuation condition</li>
+                <li><code>i++:</code> increment after each iteration</li>
+            </ul>
+            <p><b>2. while loop</b></p>
+            <p>Repeats the block of code as long as a condition is true. Ideal when the number of iterations is unknown.</p>
+
+<pre><code>
+   int i = 0;
+   while (i < 5) {
+       System.out.println("i = " + i);
+       i++;
+   }
+
+</code></pre>
+
+            <p><b>3. do-while loop</b></p>
+            <p>Similar to while, but executes the block at least once before checking the condition.</p>
+
+<pre><code>
+    int i = 0; 
+    do { 
+        System.out.println("i = " + i);
+        i++;
+    } while (i < 5);
+
+</code></pre>
+            <p>Loops are essential for automating repetitive actions and making code more efficient.</p>
+        </section>
+
+        <section class="main-section" id="fuction_declaration">
+            <header>fuction declaration</header>
+                <p>In Java, functions (also called methods) allow you to group a set of instructions under a single name, making it easy to reuse them.</p>
+                <p><b>General Structure</b></p>
+
+<pre><code>
+    aM returnType fName(parameters) {
+        // method body br
+    }
+
+</code></pre>
+                <ul>
+                    <li><b>accessModifier(aM)</b> often public, private, or protected</li>
+                    <li><b>returnType</b> the type of value returned (int, double, String, or void if no value is returned)</li>
+                    <li><b>fName</b>the name of the function</li>
+                    <li><b>parameters</b>input values passed to the function</li>
+                </ul>
+                <p><b>Simple Example</b></p>
+<pre><code>
+    public int add(int a, int b) {
+        return a + b; 
+    }
+
+</code></pre>
+                <ul>
+                    <li>This function takes two numbers a and b and returns their sum.</li>
+                    <li>return is used to send the value back to the calling program.</li>
+                </ul>
+                <p><b>Calling a Function</b></p>
+<pre><code>
+    int result = add(5, 3);
+    System.out.println(result); // Prints 8
+
+</code></pre>
+                <p>Functions help make code clearer, modular, and reusable.</p>
+        </section>
+
+        <section class="main-section" id="reference">
+            <header>reference</header>
+            <ul>
+                <li>All the documentation of this page is taken form <a href="https://chatgpt.com/">chatgpt.com</a></li>
+                <li>But you can see the real documentation of java here <a href="https://docs.oracle.com/en/java/index.html">java documentation</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
