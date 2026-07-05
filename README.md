@@ -6,7 +6,7 @@ Developed as part of the **freeCodeCamp Responsive Web Design** curriculum.
 
 ## 🚀 Live Demo
 
-You can view the live site here: [https://github.com/telesphore8527/java-technical-docs]
+You can view the live site here: [https://telesphore8527.github.io/java-technical-docs/]
 
 ## 🛠️ Features
 
